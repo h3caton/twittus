@@ -1,4 +1,6 @@
 __pycache__/*
+*/__pycache__/*
 env/*
 twittus.conf.priv
 Twittus.egg-info/*
+*.pyc
