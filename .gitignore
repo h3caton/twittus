@@ -1,0 +1,4 @@
+__pycache__/*
+env/*
+twittus.conf.priv
+Twittus.egg-info/*
