@@ -1,9 +1,6 @@
 # twittus
-simple twitter bot
+simple twitter text client
 export TWITTUS_CONFIG=<path_to_config_file>  for development
 or use twittus.conf
 
-
-TODO:
-1. console
-2. simple publications:
+1. get new twitts from last login

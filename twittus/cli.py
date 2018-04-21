@@ -2,6 +2,7 @@ from prompt_toolkit import prompt
 from prompt_toolkit.contrib.completers import WordCompleter
 from prompt_toolkit.history import FileHistory
 from twittus.base import manager, CRED, CEND, CORA, MAIN_ACTIONS
+from twittus.lister import Lister
 
 ACTIONS = ['add', 'list', 'ls']
 cpl = WordCompleter(ACTIONS + ['quit', 'help'])
@@ -25,6 +26,8 @@ class InitAction:
                 add = AddAction(self.api)
                 pr = add.run()
             elif(pr == 'list'):
+                ls = Lister(self.api)
+                pr = ls.run()
                 print('List tweets')
             elif(pr == 'ls'):
                 print('{}{}{}'.format(CORA, ACTIONS, CEND))
